@@ -1,0 +1,18 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Maximum width of the container */
+    height: auto; /* Adjusts height based on the content */
+    overflow: hidden; /* Ensures image does not overflow */
+    background-color: white;
+  }
+  
+  .responsive-image {
+    width: 100%; /* Take up entire width of the container */
+    height: auto;
+    display: block;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    cursor:pointer;
+  }
