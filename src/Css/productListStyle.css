@@ -1,0 +1,230 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.product-list-container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    /* Your other styles */
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    max-height:370px;
+  }
+  
+  .product-image {
+    width: 100%;
+    max-height: 150px; /* Adjust the maximum height of the product image */
+    object-fit: cover;
+    border-radius: 8px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .product-name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .product-description {
+    margin-top: 8px;
+  }
+  
+  .product-price {
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+  }
+  
+  /* Media queries for tablet */
+  @media screen and (max-width: 768px) {
+    .product-card {
+      width: 45%; /* Display two cards per row */
+    }
+  }
+  
+  /* Media queries for mobile */
+  @media screen and (max-width: 480px) {
+    .product-card {
+      width: 100%; /* Display one card per row */
+    }
+  }
+
+/* Base styles for the pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #eee;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination li.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Media queries for mobile phones */
+@media screen and (max-width: 480px) {
+    .pagination li {
+        display: none;
+        /* Hide all items by default */
+    }
+
+    .pagination li:first-child,
+    .pagination li:last-child {
+        display: inline-block;
+        /* Show prev and next buttons only */
+    }
+}
+
+/* Media queries for larger devices */
+@media screen and (min-width: 481px) {
+
+    .pagination li:first-child,
+    .pagination li:last-child,
+    .pagination li.break {
+        display: inline-block;
+        /* Show prev, next, and break level */
+    }
+}
+
+
+/* Base styles for the sort by dropdown */
+.sort-by-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0;
+    padding-right: 20px;
+    /* Adjust spacing from right side */
+}
+
+.sort-by {
+    display: flex;
+    align-items: center;
+}
+
+.sort-by label {
+    margin-right: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+    /* Prevent label text from wrapping */
+}
+
+.sort-by select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    appearance: none;
+    cursor: pointer;
+    font-size: 14px;
+    width: 150px;
+}
+
+/* Media queries for tablet */
+@media screen and (max-width: 768px) {
+    .sort-by-container {
+        justify-content: flex-start;
+    }
+
+    .sort-by {
+        margin-top: 15px;
+    }
+
+    .sort-by select {
+        width: 120px;
+        font-size: 12px;
+    }
+}
+
+/* Media queries for mobile */
+@media screen and (max-width: 480px) {
+    .sort-by-container {
+        justify-content: flex-start;
+    }
+
+    .sort-by {
+        margin-top: 10px;
+    }
+
+    .sort-by label {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .sort-by select {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+
+/* Example CSS for the skeleton loader */
+.skeleton-product-card {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.skeleton-product-image {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    margin-right: 20px;
+}
+
+.skeleton-product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.skeleton-product-name {
+    width: 60%;
+    height: 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.skeleton-product-description {
+    width: 40%;
+    height: 16px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.skeleton-product-price {
+    width: 30%;
+    height: 16px;
+    background-color: #f0f0f0;
+}
