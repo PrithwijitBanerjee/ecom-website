@@ -1,0 +1,10 @@
+.img-fluid-responsive{
+    max-width:500px;
+    max-height: 500px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
