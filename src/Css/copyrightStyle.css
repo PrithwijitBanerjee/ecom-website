@@ -1,0 +1,17 @@
+footer {
+    background-color: rgb(29,29,27); /* light-black background color */
+    color: hsl(0, 0%, 100%); /* white text color */
+    padding: 10px 0;
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+
+  @media(max-width: 440px)
+  {
+      .copyright{
+          font-size: 0.8em;
+      }
+  }
+  
