@@ -1,0 +1,36 @@
+/* Mobile Styles */
+.offline-container {
+    text-align: center;
+    margin:100px 0px;
+    color: rgb(251, 73, 8);
+  }
+  
+  .offline-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Tablet Styles - Example breakpoints, adjust as needed */
+  @media (min-width: 768px) {
+    .offline-image {
+      max-width: 80%;
+      height: auto;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 992px) {
+    .offline-image {
+      max-width: 60%;
+      height: auto;
+    }
+  }
+  
+  /* Larger Desktop Styles */
+  @media (min-width: 1200px) {
+    .offline-image {
+      max-width: 50%;
+      height: auto;
+    }
+  }
+  
