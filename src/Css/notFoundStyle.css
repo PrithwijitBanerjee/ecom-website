@@ -1,0 +1,100 @@
+/* .img-fluid-responsive{
+    max-width:500px;
+    max-height: 500px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+/* Assuming a max-width for mobile devices */
+/* Mobile Styles */
+.img-fluid-responsive {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Tablet Styles - Example breakpoints, adjust as needed */
+  @media (min-width: 768px) {
+    .img-fluid-responsive {
+      max-width: 80%;
+      height: auto;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 992px) {
+    .img-fluid-responsive {
+      max-width: 60%;
+      height: auto;
+    }
+  }
+  
+  /* Larger Desktop Styles */
+  @media (min-width: 1200px) {
+    .img-fluid-responsive {
+      max-width: 50%;
+      height: auto;
+    }
+  }
+ /* Larger Desktop Styles */
+ @media (min-width: 1024px) {
+    .img-fluid-responsive {
+      max-width: 50%;
+      height: auto;
+      margin:0px auto;
+    }
+  }
+    
+
+.home-container{
+    margin:30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.home-button{
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    max-width:30%;
+    padding: 14px;
+}
+
+.home-button:hover{
+    background-color: brown;
+    color: white;
+}
+
+@media (max-width: 360px)
+{
+    .home-button{
+        max-width:50%;
+        margin:auto;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .home-button{
+        max-width:70%;
+        margin:auto;
+        font-size: 12px;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 780px)
+{
+    .home-button{
+        max-width:50%;
+        margin:auto;
+        padding: 14px;
+    }
+}

@@ -1,0 +1,42 @@
+/* Add these styles in your CSS file or within your component */
+
+.footer-style-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dimension {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 768px) {
+  /* Styles for tablets */
+  .footer-style-logo {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Styles for smaller desktop screens */
+  .footer-style-logo {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Styles for larger desktop screens */
+  .footer-style-logo {
+    justify-content: flex-start;
+  }
+
+  .dimension {
+    max-width: calc(
+      100% / 3 - 20px
+    ); /* Adjust the width to accommodate 3 images with margins */
+    margin: 10px; /* Add margin between images */
+  }
+}

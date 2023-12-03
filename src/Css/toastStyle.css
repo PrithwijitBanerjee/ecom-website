@@ -1,0 +1,52 @@
+/* toastStyle.css */
+.notification {
+    position: fixed;
+    bottom: 20px; /* Position at the bottom */
+    left: 50%; /* Position at the horizontal center */
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.5s ease forwards; /* Slide up animation */
+    opacity: 0; /* Initially hide the notification */
+    cursor: pointer;
+    z-index:2000;
+  }
+  
+  @keyframes slideUp {
+    from {
+      bottom: -50px; /* Initial position at the bottom */
+      opacity: 0;
+    }
+    to {
+      bottom: 20px; /* Final position slightly above the bottom */
+      opacity: 1;
+    }
+  }
+  
+  .notification.success {
+    background-color: #47df6a;
+    /* border: 1px solid #c3e6cb; */
+  }
+  .notification.error{
+        background-color: rgb(245, 163, 163);
+  }
+  /* Animation for hiding the notification */
+  .notification.hide {
+    animation: slideDown 0.5s ease forwards; /* Slide down animation for hiding */
+  }
+  
+  @keyframes slideDown {
+    from {
+      bottom: 20px; /* Initial position slightly above the bottom */
+      opacity: 1;
+    }
+    to {
+      bottom: -50px; /* Final position at the bottom */
+      opacity: 0;
+    }
+  }
+  
+  
